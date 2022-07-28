@@ -161,6 +161,11 @@ for i = 1:iters
 end
 end
 
-%% Sample lines of code to produce figures from the paper:
+%% Sample lines of code to produce basics of figures from the paper:
 % Individual spectra-height plots as in Fig. 4b-e can be plotted using:
-% pcolor(vr, range, spectra)
+% pcolor(vr, range, spectra(timeToPlot,:,:)), shading flat, colorbar
+% Comparison of insect and total reflectivity as in Fig. 6 can be plotted using:
+% figure, subplot(1,2,1), pcolor(datetime,range,insectReflectivity),
+% shading flat, colorbar
+% subplot (1,2,2), pcolor(datetime,range,totalReflectivity),
+% shading flat, colorbar
